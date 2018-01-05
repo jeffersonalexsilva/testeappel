@@ -1,0 +1,24 @@
+<section class="painel-goals">
+	<h2 class="sub-title">Minhas metas</h2>
+	<div class="goals">
+		<h3 class="sub-title">Resumo das metas mensais</h3>
+		<aside class="abstract-list-goal">
+			<div class="bar-percent"><a href="#list-goals"><span>70</span>%</a></div>
+			<a class="arrow"><img src="img/circle-down.svg"></a>
+		</aside>
+		<!--  área do loop para a lista -->
+		<ul id="list-goals">
+			
+		</ul>
+	</div>
+	<a href="#" id="button-add">
+		<span class="line"></span>
+		<span class="line"></span>
+	</a>
+</section>
+<script>
+	jQuery('a#button-add').on('click',function(e){
+		jQuery('section#painel-newgoal').addClass('show');
+		e.preventDefault();
+	});
+</script>

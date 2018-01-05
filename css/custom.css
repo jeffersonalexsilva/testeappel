@@ -1,0 +1,159 @@
+header#head-page{position: fixed;top:0;left:0;width: 70%;z-index: 10}
+a.close{display: block;width: 30px;height: 30px;position: absolute;top:5px; right:5px}
+a.close span.line{display: block;background-color:#b2b2b2;padding:1px;position: relative}
+a.close span.line:first-child{transform:rotateZ(45deg);top:12px}
+a.close span.line:last-child{transform:rotateZ(-45deg);top:10px}
+a#button-add{display:block;width: 30px;height: 30px; background-color:#01579B;position: fixed;bottom: 10px;right: 10px;padding: 10px;border-radius:50%;box-shadow: 0 0 10px #ccc;z-index: 20}
+a#button-add span.line{background-color:#fff;display: block;padding: 1px;margin:1px}
+a#button-add span.line:first-child{transform:rotateZ(90deg);margin-top:15px}
+a#button-add span.line:nth-child(2){margin-top:-3px}
+/* button */
+.bt-item{padding: 6px 15px;font-size:0.8em;text-align: center;border:none;border-radius:5px;}
+.bt-item.active1,.bt-item.active{box-shadow:0 1px 5px #9999}
+.bt-item.active{background-color:#0277BD;color:#fff}
+/* inputs */
+input[type='text'],input[type='datetime'],input[type='number'],textarea, select{font-family:'Roboto';width: 100%;padding:10px 0;font-size: 0.9em;border: 0;outline:0; border-bottom:1px solid transparent}
+input[type='text']:focus,input[type='datetime']:focus,input[type='number']:focus,textarea:focus{border-bottom-color:#0091EA}
+/* Icon menu mobile */
+input#ck-menu{position: absolute;clip:rect(0,0,0,0)}
+label.icon-menu{display: block;position: absolute;left: 5px;top:15px;width: 30px;height: 30px;z-index: 15}
+label.icon-menu span.line{display: block;background-color: #000;margin: 3px 1px;padding: 1px}
+input#ck-menu:checked + label.icon-menu{margin-top:-3px}
+input#ck-menu:checked + label.icon-menu span.line{background-color: #fff}
+input#ck-menu:checked + label.icon-menu span.line:first-child{transform: rotateZ(45deg);margin-top: 10px}
+input#ck-menu:checked + label.icon-menu span.line:nth-child(2){transform: rotateZ(-45deg);margin-top: -4px}
+input#ck-menu:checked + label.icon-menu span.line:nth-child(3){transform: rotateZ(45deg);opacity:0}
+/* Items menu */
+nav.menu-top{position: fixed;top: 0;left:0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.8);z-index:10; transform: translateX(-100%)}
+nav.menu-top ul{padding: 50px 0;margin: 0}
+nav.menu-top ul li.item{padding: 0;display: block;margin: 0;border-bottom: 1px solid #666}
+nav.menu-top ul li.item a{display: block;color: #f0f0f0;padding: 10px}
+input#ck-menu:checked + label.icon-menu + nav.menu-top{transform: translateX(0)}
+/* Alerts */
+aside.alert{position: fixed; top:5px; right:50%}
+aside.alert a.icon-bell{display: block;color:#000;position: relative;}
+aside.alert a.icon-bell figure{display: block;position: relative;}
+aside.alert a.icon-bell figure img{width: 16px;height: auto;position: absolute;top:0;right:0;z-index: 5}
+aside.alert a.icon-bell figure figcaption{font-size: 0.8em;background-color: #EF9A9A;border: 1px solid #f5f5f5;position:absolute;top:10px;left:-40px; z-index:5;border-radius:20%;padding:5px}
+aside.alert div#alerts{position: absolute;width: 300px;top:24px;z-index: 6;left:-150px;background-color: #fff;border:1px solid #eee;box-shadow: 0 0 10px #ccc;display:none}
+aside.alert div#alerts:target{display:block}
+aside.alert div#alerts dl{padding: 10px}
+aside.alert div#alerts dl dt{font-size: 0.9em;font-weight: bold;padding: 2px 0 2px 5px}
+aside.alert div#alerts dl dd{font-size: 0.8em;font-weight: 100;padding-left: 5px;padding-bottom: 10px;border-bottom: 1px solid #ddd}
+/* user painel */
+section#person{width:100%;position: absolute;height: 100%;z-index: 1;background-image:url(../img/bg-user.jpg);background-position:50% 50%; background-size: cover;}
+section#person header{}
+section#person header aside.hello{position: relative;max-width: 200px;margin: 0 auto; padding: 80px 0 15px 0}
+section#person header aside.hello span.hi{}
+section#person header aside.hello h1.title{}
+section#person header figure.figure-user{position: relative;display: block;width: 170px;height:auto;margin:0 auto}
+section#person header figure.figure-user a.icon-user{display: block;}
+section#person header figure.figure-user img.img-user{width: 100%;height: auto;border-radius: 50%}
+section#person header figure.figure-user figcaption img.img-award-month{width: 30px;height: auto;position:absolute;bottom:0;left:0}
+section#person header section.abstract{padding-top: 5px}
+section#person header section.abstract dl.area-weight{width: 170px;margin:0 auto;padding: 10px 0;background-color: rgba(255,255,255,0.5);border-radius:5px}
+section#person header section.abstract dl.area-weight dt{text-align: center;font-size: 1.1em}
+section#person header section.abstract dl.area-weight dd{font-size: 0.7em;text-align: right;width: 120px;margin: 0 auto}
+section#person header section.abstract dl.area-weight dd span.arrow{display: block;width:25px;height:25px;float: left;background-image:url(../img/circle-down.svg);background-size: cover;background-position: 50% 50%}
+section#person header section.abstract aside.goals-abstract{text-align: center;padding-top: 5px}
+section#person header section.abstract aside.goals-abstract div.description{width: 200px;margin: 0 auto}
+section#person header section.abstract aside.goals-abstract div.description:after, ul#list-goals li.item-goal article header:after, section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories:after{content:"";clear: both;display: block}
+section#person header section.abstract aside.goals-abstract div.description div.desc-text{font-size: 1.2em;float:left;width:80%}
+section#person header section.abstract aside.goals-abstract div.description div.desc-text h3{font-size: 0.6em}
+section#person header section.abstract aside.goals-abstract div.description div.desc-text strong.goal-percent{}
+section#person header section.abstract aside.goals-abstract div.description div.desc-text  strong.goal-amount{}
+section#person header section.abstract aside.goals-abstract div.description figure.award{float:left;width:20%;height: auto;display:block}
+section#person header section.abstract aside.goals-abstract div.description figure.award img{width: 100%;height: auto}
+section#person header section.abstract aside.goals-abstract div.bar-percent, section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent, article.content-item footer.foot-item div.bar-percent{display: block;position: absolute;z-index: 1;background-color: #ccc;width:100%;bottom:0;left:0}
+section#person header section.abstract aside.goals-abstract div.bar-percent:after, section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent:after,article.content-item footer.foot-item div.bar-percent:after{content:"";display: block;height:100%;position: absolute;left:0;top:0;width: 20%;background-color:#01579B}
+section#person header section.abstract aside.goals-abstract div.bar-percent a.description, section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent a,article.content-item footer.foot-item div.bar-percent a{display: block;text-align: center;font-size:0.6em;color:#fff;padding:10px;position: relative;z-index: 2}
+/* Click open Goals List */
+section#person.hide{height:150px;position: relative}
+section#person.hide header figure.figure-user{width: 70px;height:auto}
+section#person.hide header figure.figure-user img.img-user{border:3px solid #fff}
+section#person.hide header aside.hello{padding-top:30px}
+section#person.hide header section.abstract{display: none}
+/* Content area */
+section#content{}
+/* Painel Goals */
+section#content section.painel-goals{padding: 30px 10px}
+section#content section.painel-goals h2.sub-title{padding: 20px 0}
+section#content section.painel-goals div.goals h3.sub-title{font-size: 0.9em}
+section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent, article.content-item footer.foot-item div.bar-percent{position: relative}
+section#content section.painel-goals div.goals aside.abstract-list-goal a.arrow{display: block;width:25px;height:25px;margin: 0 auto;padding:5px 0}
+section#content section.painel-goals div.goals aside.abstract-list-goal a.arrow img{width: 100%;height: auto}
+section#content section.painel-goals div.goals ul#list-goals{margin: 5px 0;padding: 0;background-color: #d5d5d5}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal{display: block;padding-bottom:5px;border-bottom: 1px solid #ddd}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item{padding: 5px}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header{margin-bottom: 5px}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header div.img-category{width: 80px;height:80px;float:left;background-position: 0 50%;background-repeat: no-repeat;background-size: cover;}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header div.img-category.exercise{background-image:url(../img/bg-exercise.jpg)}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header div.img-category.sleep{background-image:url(../img/bg-sleep.jpg)}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header div.img-category.food{background-image:url(../img/bg-food.jpg)}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header div.img-category.stress{background-image:url(../img/bg-stress.jpg)}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header h4{padding-left: 5px;float:left;width: 180px;font-size: 0.8em}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header figure.img-award{width: 20px;float: right;padding-left:5px}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header figure.img-award img{width: 100%;height: auto}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header nav.nav-header{position: absolute;top: 10px;left: 10px;z-index: 31;display:none}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header nav.nav-header ul.menu-goal{}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header nav.nav-header ul.menu-goal li.item-menu{display:inline-block}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header nav.nav-header ul.menu-goal li.item-menu a{display:block;width: 30px;height: 30px}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article header nav.nav-header ul.menu-goal li.item-menu a img{width: 100%;height: auto;transform: rotateZ(90deg)}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry{float: right;margin-top:-40px;position: relative;z-index: 5;padding: 5px}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry span.last-change{padding: 5px;font-size: 0.7em;color: #999;float: left}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry div.entry-content{display: none;padding: 10px;}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry div.entry-content h5{padding: 0}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry div.entry-content p{padding: 10px 0;color: #bbb;font-size:0.8em}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry div.entry-content em.cta{text-align: center;padding: 5px}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry aside.humour{padding: 20px 0;width: 300px;margin:0 auto;text-align: center;display: none}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry aside.humour ul.group-humour{padding: 0;margin: 0}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry aside.humour ul.group-humour li{display: inline-block;width: 15%;padding: 0;margin: 0;position: relative;}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry aside.humour ul.group-humour li input[type="radio"]{position: absolute;clip:rect(0,0,0,0)}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry aside.humour ul.group-humour li label.lb{display: block;border-radius:50%;padding: 5px}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry aside.humour ul.group-humour li label.lb img{width: 100%; height: auto}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article div.entry aside.humour ul.group-humour li input[type="radio"]:checked + label.lb{background-color:#0091EA}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article footer{}
+/* Item goal active */
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show{position: absolute;width: 100%;height: 100%;padding:0;left:0;top:0;background-color:#f9f9f9;z-index:30}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show header > *{float: none}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show header nav.nav-header{display:block}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show header div.img-category{width:100%;height: 170px;background-position: 50% 50%}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show header h4{padding: 10px;width: auto;font-size: 1.3em;margin-top:-100px;text-align: center;color:#fff;text-shadow: 0 1px 1px #000}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show header figure.img-award{margin:0 auto}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show div.entry{float: none;margin: 0 auto;width: 300px;margin-top:50px}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show div.entry div.entry-content{display: block}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show div.entry span.last-change{float: none;display: block; text-align: center}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show div.entry button.bt-item{display: block;width: 200px;margin: 0 auto}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show div.entry aside.humour{display: block}
+section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show footer{position: absolute;top:170px;width: 100%}
+/* Section for register new Goal  */
+section#painel-newgoal{position: absolute;width: 100%;height: 100%;top:0;left:0;z-index: 50;background-color:#f9f9f9;transform: translateY(-100%)}
+section#painel-newgoal.show{transform: translateY(0)}
+section#painel-newgoal header.header-new-goal{background-image:url(../img/bg-newgoal.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 10px 0}
+section#painel-newgoal header.header-new-goal h2{padding: 10px;text-align: center;}
+section#painel-newgoal div.entry{padding: 5px 0}
+section#painel-newgoal div.entry form dl.list-items-form{padding: 10px}
+section#painel-newgoal div.entry form dl.list-items-form dt{padding: 2px 0}
+section#painel-newgoal div.entry form dl.list-items-form dt label{font-size: 0.9em;color: #333;display: block}
+section#painel-newgoal div.entry form dl.list-items-form dd{padding: 10px 0;border-bottom: 1px solid #eee}
+section#painel-newgoal div.entry form dl.list-items-form dd span.description{display: block;font-size: 0.7em;color:#b2b2b2}
+section#painel-newgoal div.entry form dl.list-items-form dd span.description a{display: inline-block;color:#999;text-decoration: underline;}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories{}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li{display: block;width: 25%;padding: 0;margin: 0;position: relative;float:left}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li input[type="radio"]{position: absolute;clip:rect(0,0,0,0)}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li label.lb{display: block;width:100%;height:42px; background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;position: relative;z-index: 0;border:1px solid #f0f0f0}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li label.lb:after{content:"";display: block;position: absolute;width: 100%;height: 100%;top:0;left:0;background-color: rgba(1, 87, 155,0.5);z-index: 2}
+/* section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li label.lb.food{background-image: url(../img/bg-food.jpg)}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li label.lb.sleep{background-image: url(../img/bg-sleep.jpg)}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li label.lb.stress{background-image: url(../img/bg-stress.jpg)}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li label.lb.exercise{background-image: url(../img/bg-exercise.jpg)} */
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li label.lb span{font-size: 0.6em;display: block; line-height:1.3em; text-align: center;padding: 10px 0;color: #fff;text-shadow: 0 1px 1px #000;position: relative;z-index: 3}
+section#painel-newgoal div.entry form dl.list-items-form dd ul.group-categories li input[type="radio"]:checked + label.lb:after{background-color:rgba(0,0,0,0.7)}
+section#painel-newgoal div.entry form dl.list-items-form dd.repeat-box{}
+section#painel-newgoal div.entry form dl.list-items-form dd.repeat-box label{display: inline-block}
+section#painel-newgoal div.entry form dl.list-items-form dd.repeat-box label.lb-qt{width: 15%}
+section#painel-newgoal div.entry form dl.list-items-form dd.repeat-box label.lb-when{width: 50%}
+section#painel-newgoal div.entry form dl.list-items-form dd.repeat-box label.lb-until{width: 30%}
+section#painel-newgoal div.entry form dl.list-items-form dt.actions{width: 300px;margin: 0 auto;text-align: center}
+section#painel-newgoal div.entry form dl.list-items-form dt.actions a{color: #333;border:1px solid #f0f0f0}
+section#painel-newgoal div.entry form dl.list-items-form dt.actions a, section#painel-newgoal div.entry form dl.list-items-form dt.actions button{display: inline-block;margin: 0 20px}

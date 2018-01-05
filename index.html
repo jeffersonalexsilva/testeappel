@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projeto - TesteApp (ELEVE)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="robot" content="no index"/>
+		<meta name="author" content="plus.google.com/+jeffersonalexbr"/>
+		<meta charset="UTF-8" />
+		<link href="css/reset.css" rel="stylesheet" >
+		<link href="css/custom.css" rel="stylesheet" >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body>
+		<div id="principal">
+			<header id="head-page" class="header">
+				<input type="checkbox" id="ck-menu">
+				<label class="icon-menu" for="ck-menu">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</label>
+				<nav class="menu-top">
+					<ul>
+						<li class="item"><a href="#">Item Menu</a></li>
+						<li class="item"><a href="#">Item Menu</a></li>
+						<li class="item"><a href="#">Item Menu</a></li>						
+					</ul>
+				</nav>
+				<aside class="alert">
+					<a href="#alerts" class="icon-bell">
+						<figure class="img-icon">
+							<img src="img/bell.svg">
+							<figcaption class="count-alerts">123</figcaption>
+						</figure>
+					</a>
+					<div id="alerts">
+						<a href="#" class="close">
+							<span class="line"></span>
+							<span class="line"></span>
+						</a>
+						<dl class="list-alerts">
+							<dt>Título do alerta</dt>
+							<dd>Texto do alerta</dd>
+							<dt>Título do alerta</dt>
+							<dd>Texto do alerta</dd>
+						</dl>
+					</div>
+				</aside>
+			</header>
+			<section id="person">
+				<header>
+					<aside class="hello">
+						<span class="hi">Olá</span>
+						<h1 class="title name-user">Fulano de Tal</h1>
+					</aside>
+					<figure class="figure-user">
+						<a href="#" class="icon-user">
+							<img src="img/user-photo.jpg" alt="usuário" class="img-user">
+							<figcaption><img src="img/award-0.svg" class="img-award-month"></figcaption>
+						</a>
+					</figure>
+					<section class="abstract">
+						<dl class="area-weight">
+							<dt><span class="weight">56</span><em class="description">kg</em> (meta <span class="goal">55</span>)</dt>
+							<dd><span class="arrow"></span><em class="description"><strong>-12</strong> na última<br>semana</em></dd>
+						</dl>
+						<aside class="goals-abstract">
+							<div class="description">
+								<div class="desc-text">
+									<h3>Sua evolução deste mês</h3>
+									<strong class="goal-percent"><span>83</span>%</strong> de <strong class="goal-amount">3</strong> metas
+								</div>
+								<figure class="award">
+									<img src="img/award-1.svg" class="img-award-month">
+								</figure>
+							</div>
+							<div class="bar-percent">
+								<a href="#" class="description">Continue evoluindo ></a>
+							</div>
+						</aside>
+					</section>
+				</header>
+			</section>
+			<section id="content">
+			</section>
+			<section id="painel-newgoal">
+				<header class="header-new-goal">
+					<h2 class="sub-title">Nova meta</h2>
+				</header>
+				<div class="entry">
+					<form id="form-goal" method="post" >
+						<dl class="list-items-form">
+							<dt class="item-form">
+								<label for="title-goal">Digite um título para essa meta</label>
+							</dt>
+							<dd>
+								<input class="item-newgoal" type="text" id="title-goal" name="title" placeholder="Ex.: Inserir salada nas refeições">
+								<span class="description">Digite um texto curto e fácil de entender. <a href="#" target="_blank">Saiba como.</a></span>
+							</dd>
+							<dt class="item-form">
+								<label for="category-goal">Tipo de meta</label>
+							</dt>
+							<dd>
+								<ul class="group-categories">
+									<li>
+										<input type="radio" class="rd-type item-newgoal" name="category" value="food" id="rd-type-food">
+										<label for="rd-type-food" class="lb food"><span>Comportamento alimentar</span></label>
+									</li>
+									<li>
+										<input type="radio" class="rd-type item-newgoal" name="category" value="exercise" id="rd-type-exercise">
+										<label for="rd-type-exercise" class="lb exercise"><span>Atividade física</span></label>
+									</li>
+									<li>
+										<input type="radio" class="rd-type item-newgoal" name="category" value="sleep" id="rd-type-sleep">
+										<label for="rd-type-sleep" class="lb sleep"><span>Sono</span></label>
+									</li>
+									<li>
+										<input type="radio" class="rd-type item-newgoal" name="category" value="stress" id="rd-type-stress">
+										<label for="rd-type-stress" class="lb stress"><span>Estresse</span></label>
+									</li>							
+								</ul>
+								<span class="description">Entenda os tipos de meta <a href="#" target="_blank">aqui.</a></span>
+							</dd>
+							<dt class="item-form">
+								<label for="description-goal">Descrição/Fundamentação</label>
+							</dt>
+							<dd>
+								<textarea id="description-goal" name="description" class="item-newgoal" placeholder="Ex.: Essa atividade é fundamental para ..."></textarea>
+								<span class="description"><a href="#" target="_blank">Entenda.</a></span>
+							</dd>
+							<dt class="item-form">
+								<label>Repetição</label>
+							</dt>
+							<dd class="repeat-box">
+							
+								<label class="lb-qt">
+									<span class="description">Vezes</span>
+									<input type="number" name="repeat" class="item-newgoal" >
+								</label>
+								<label class="lb-when">
+									<select name="when" class="item-newgoal" >
+										<option value="hora">por hora</option>
+										<option value="dia">por dia</option>
+										<option value="semana">por semana</option>
+										<option value="mes">por mês</option>
+									</select>
+								</label>
+								<label class="lb-until"><span class="description">até</span>
+									<input type="datetime" name="until" placeholder="dd/mm/aaaa" class="item-newgoal" >
+								</label>
+								<span class="description">Como definir uma <a href="#" target="_blank">Repetição?</a></span>
+							</dd>
+							<dt class="actions"><a href="#" class="bt-item" id="bt_cancela">Cancelar</a><button class="bt-item active" id="bt_registrameta">Registrar</button></dt>
+						</dl>
+					</form>
+				</div>
+			</section>
+		</div>
+		<script>
+				jQuery('section#painel-newgoal a.return,a#bt_cancela').on('click',function(e){
+					jQuery('section#painel-newgoal').toggleClass('show');
+					e.preventDefault();
+				});
+		</script>
+	</body>
+</html>
