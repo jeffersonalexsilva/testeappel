@@ -1,9 +1,9 @@
-header#head-page{position: fixed;top:0;left:0;width: 70%;z-index: 10}
+header#head-page{position: fixed;top:0;left:0;width: 70%;z-index: 15}
 a.close{display: block;width: 30px;height: 30px;position: absolute;top:5px; right:5px}
 a.close span.line{display: block;background-color:#b2b2b2;padding:1px;position: relative}
 a.close span.line:first-child{transform:rotateZ(45deg);top:12px}
 a.close span.line:last-child{transform:rotateZ(-45deg);top:10px}
-a#button-add{display:block;width: 30px;height: 30px; background-color:#01579B;position: fixed;bottom: 10px;right: 10px;padding: 10px;border-radius:50%;box-shadow: 0 0 10px #ccc;z-index: 20}
+a#button-add{display:block;width: 30px;height: 30px; background-color:#01579B;position: fixed;bottom: 10px;right: 10px;padding: 10px;border-radius:50%;box-shadow: 0 0 10px #ccc;z-index: 5}
 a#button-add span.line{background-color:#fff;display: block;padding: 1px;margin:1px}
 a#button-add span.line:first-child{transform:rotateZ(90deg);margin-top:15px}
 a#button-add span.line:nth-child(2){margin-top:-3px}
@@ -41,7 +41,7 @@ aside.alert div#alerts dl{padding: 10px}
 aside.alert div#alerts dl dt{font-size: 0.9em;font-weight: bold;padding: 2px 0 2px 5px}
 aside.alert div#alerts dl dd{font-size: 0.8em;font-weight: 100;padding-left: 5px;padding-bottom: 10px;border-bottom: 1px solid #ddd}
 /* user painel */
-section#person{width:100%;position: absolute;height: 100%;z-index: 1;background-image:url(../img/bg-user.jpg);background-position:50% 50%; background-size: cover;}
+section#person{width:100%;position: absolute;height: 100%;z-index: 10;background-image:url(../img/bg-user.jpg);background-position:50% 50%; background-size: cover;}
 section#person header{}
 section#person header aside.hello{position: relative;max-width: 200px;margin: 0 auto; padding: 80px 0 15px 0}
 section#person header aside.hello span.hi{}
@@ -65,7 +65,7 @@ section#person header section.abstract aside.goals-abstract div.description div.
 section#person header section.abstract aside.goals-abstract div.description figure.award{float:left;width:20%;height: auto;display:block}
 section#person header section.abstract aside.goals-abstract div.description figure.award img{width: 100%;height: auto}
 section#person header section.abstract aside.goals-abstract div.bar-percent, section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent, article.content-item footer.foot-item div.bar-percent{display: block;position: absolute;z-index: 1;background-color: #ccc;width:100%;bottom:0;left:0}
-section#person header section.abstract aside.goals-abstract div.bar-percent:after, section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent:after,article.content-item footer.foot-item div.bar-percent:after{content:"";display: block;height:100%;position: absolute;left:0;top:0;width: 20%;background-color:#01579B}
+section#person header section.abstract aside.goals-abstract div.bar-percent span.bar, section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent span.bar,article.content-item footer.foot-item div.bar-percent span.bar{content:"";display: block;height:100%;position: absolute;left:0;top:0;background-color:#01579B}
 section#person header section.abstract aside.goals-abstract div.bar-percent a.description, section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent a,article.content-item footer.foot-item div.bar-percent a{display: block;text-align: center;font-size:0.6em;color:#fff;padding:10px;position: relative;z-index: 2}
 /* Click open Goals List */
 section#person.hide{height:150px;position: relative}
@@ -76,7 +76,7 @@ section#person.hide header section.abstract{display: none}
 /* Content area */
 section#content{}
 /* Painel Goals */
-section#content section.painel-goals{padding: 30px 10px}
+section#content section.painel-goals{padding: 30px 10px;z-index: 0}
 section#content section.painel-goals h2.sub-title{padding: 20px 0}
 section#content section.painel-goals div.goals h3.sub-title{font-size: 0.9em}
 section#content section.painel-goals div.goals aside.abstract-list-goal div.bar-percent, article.content-item footer.foot-item div.bar-percent{position: relative}

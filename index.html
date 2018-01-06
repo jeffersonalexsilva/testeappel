@@ -9,9 +9,10 @@
 		<link href="css/reset.css" rel="stylesheet" >
 		<link href="css/custom.css" rel="stylesheet" >
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/jquery.mask.min.js"></script>		
 		<script src="js/custom.js"></script>
 	</head>
-	<body>
+	<body">
 		<div id="principal">
 			<header id="head-page" class="header">
 				<input type="checkbox" id="ck-menu">
@@ -82,7 +83,28 @@
 					</section>
 				</header>
 			</section>
+			<!-- Conteúdo das metas -->
 			<section id="content">
+				<section class="painel-goals">
+					<h2 class="sub-title">Minhas metas</h2>
+					<div class="goals">
+						<h3 class="sub-title">Resumo das metas mensais</h3>
+						<aside class="abstract-list-goal">
+							<div class="bar-percent">
+								<span class="bar"></span>
+								<a href="#list-goals"><span class="qt-total">70</span>%</a></div>
+							<a class="arrow"><img src="img/circle-down.svg"></a>
+						</aside>
+						<!--  área do loop para a lista -->
+						<ul id="list-goals">
+							
+						</ul>
+					</div>
+					<a href="#" id="button-add">
+						<span class="line"></span>
+						<span class="line"></span>
+					</a>
+				</section>
 			</section>
 			<section id="painel-newgoal">
 				<header class="header-new-goal">
@@ -147,7 +169,7 @@
 									</select>
 								</label>
 								<label class="lb-until"><span class="description">até</span>
-									<input type="datetime" name="until" placeholder="dd/mm/aaaa" class="item-newgoal" >
+									<input type="datetime" name="until" placeholder="dd/mm/aaaa" class="item-newgoal date-until" >
 								</label>
 								<span class="description">Como definir uma <a href="#" target="_blank">Repetição?</a></span>
 							</dd>
@@ -157,9 +179,14 @@
 				</div>
 			</section>
 		</div>
-		<script>
+		<script>	
+				$('.date-until').mask('00/00/0000',{placeholder: "dd/mm/aaaa"});
 				jQuery('section#painel-newgoal a.return,a#bt_cancela').on('click',function(e){
 					jQuery('section#painel-newgoal').toggleClass('show');
+					e.preventDefault();
+				});
+				jQuery('a#button-add').on('click',function(e){
+					jQuery('section#painel-newgoal').addClass('show');
 					e.preventDefault();
 				});
 		</script>
