@@ -41,12 +41,12 @@ aside.alert div#alerts dl{padding: 10px}
 aside.alert div#alerts dl dt{font-size: 0.9em;font-weight: bold;padding: 2px 0 2px 5px}
 aside.alert div#alerts dl dd{font-size: 0.8em;font-weight: 100;padding-left: 5px;padding-bottom: 10px;border-bottom: 1px solid #ddd}
 /* user painel */
-section#person{width:100%;position: absolute;height: 100%;z-index: 10;background-image:url(../img/bg-user.jpg);background-position:50% 50%; background-size: cover;}
+section#person{width:100%;position: fixed;height: 100%;z-index: 10;background-image:url(../img/bg-user.jpg);background-position:50% 50%; background-size: cover;}
 section#person header{}
-section#person header aside.hello{position: relative;max-width: 200px;margin: 0 auto; padding: 80px 0 15px 0}
+section#person header aside.hello{position: relative;max-width: 200px;margin: 0 auto; padding: 40px 0 15px 0}
 section#person header aside.hello span.hi{}
 section#person header aside.hello h1.title{}
-section#person header figure.figure-user{position: relative;display: block;width: 170px;height:auto;margin:0 auto}
+section#person header figure.figure-user{position: relative;display: block;width: 150px;height:auto;margin:0 auto}
 section#person header figure.figure-user a.icon-user{display: block;}
 section#person header figure.figure-user img.img-user{width: 100%;height: auto;border-radius: 50%}
 section#person header figure.figure-user figcaption img.img-award-month{width: 30px;height: auto;position:absolute;bottom:0;left:0}
@@ -127,7 +127,7 @@ section#content section.painel-goals div.goals ul#list-goals li.item-goal articl
 section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show div.entry aside.humour{display: block}
 section#content section.painel-goals div.goals ul#list-goals li.item-goal article.content-item.show footer{position: absolute;top:170px;width: 100%}
 /* Section for register new Goal  */
-section#painel-newgoal{position: absolute;width: 100%;height: 100%;top:0;left:0;z-index: 50;background-color:#f9f9f9;transform: translateY(-100%)}
+section#painel-newgoal{position: fixed;width: 100%;height: 100%;top:0;left:0;z-index: 50;background-color:#f9f9f9;transform: translateY(-200%);overflow: scroll}
 section#painel-newgoal.show{transform: translateY(0)}
 section#painel-newgoal header.header-new-goal{background-image:url(../img/bg-newgoal.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 10px 0}
 section#painel-newgoal header.header-new-goal h2{padding: 10px;text-align: center;}
